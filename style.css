@@ -1,15 +1,15 @@
 body {
-    font-family: DM-sans;
+    font-family: arial;
     background-color: #1a1a1a;
     color: #f0f0f0;
     margin: 0;
     padding: 0;
-    font-family: Zrnic Rg;
+    font-size: 16px;
 }
 
 
 .logo img, .shapes img {
-    height: 100px;
+    height: 75px;
 }
 
 
@@ -23,22 +23,25 @@ header {
     margin-left: 3%;
     margin-right: 3%;
     border-radius: 10px;
+    font-family:  dnf;
 }
 
 h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 50px;
+
 }
 
 h2{
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    font-size: 20px;
+    font-size: 15px;
+    color:white;
 }
 
 nav ul li {
@@ -54,6 +57,11 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline; 
+    color:white;
+}
+
+.caption{
+    margin-top: 20px;
 }
 
 .products-grid {
@@ -68,7 +76,7 @@ nav ul li a:hover {
     background-color: #262626;
     border-radius: 10px;
     padding: 20px;
-    width: 45%; /* Adjust width as necessary */
+    width: 40%;
     text-align: center;
 }
 
@@ -76,16 +84,28 @@ nav ul li a:hover {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
+}
+
+.link{
+    color: rgb(109, 109, 209);
+}
     
 .slideshow-container {
     position:relative;
     max-width: 650px;
     margin: 10px auto;
-    height: 30%; 
+    height: 30%px; 
     overflow:hidden; 
     border-radius: 10px;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
 
 .mySlides {
     width: 80%;
@@ -94,7 +114,6 @@ nav ul li a:hover {
 
 .mySlides img {
     height: 100%;
-
     width: 400px;
     margin: auto;
     display:block ;
@@ -107,49 +126,24 @@ nav ul li a:hover {
     opacity: 1;
 }
 
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
 
-.next {
+.next{
+    cursor: pointer;
     right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
-
-.caption {
-  
-}
-
-.dots-container {
-    text-align: center;
-    padding: 20px 0;
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    top: 50%;
+    position:absolute;
+}
+
+.prev{
+    top: 50%;
+    cursor: pointer;
+    left: 0;
+    margin: 0 2px;
+    border-radius: 50%;
+    position:absolute;
 }
 
 .active, .dot:hover {
@@ -157,16 +151,22 @@ nav ul li a:hover {
 }
 
 .content {
-    padding: 20px;
+    padding: 70px, 0;
     max-width: 1000px;
     margin: 20xpx auto;
-    background-color: #1e1e1e;
+    background-color: #282828;
     border-radius: 10px;
     text-align: center;
+    margin-top: 25px;
+    margin-left: 245px;
+    padding: 20px;
+    margin-bottom: 25px;
+    
 }
 .hero {
     text-align: center;
     margin: 20px;
+
 }
 
 .hero img {
@@ -174,15 +174,7 @@ nav ul li a:hover {
     height: auto;
     border-radius: 10px;
 
-}
-
-.content{
-    : center;
-    margin: 20px;
-    padding: 20px;
-    background-color: #262626;
-    border-radius: 10px;
-}
+}   
 
 .content h2 {
     color: #ffffff;
@@ -195,6 +187,7 @@ footer {
     position: static;
     width: 100%;
     bottom: 0;
+    font-size: 14px;
 }
 
 
